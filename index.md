@@ -9,6 +9,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 <midi-player
   src="https://magenta.github.io/magenta-js/music/demos/melody.mid"
-  sound-font visualizer="#myVisualizer">
+  sound-font="https://storage.googleapis.com/magentadata/js/soundfonts/sgm_plus"
+  visualizer="#myVisualizer">
 </midi-player>
-<midi-visualizer type="piano-roll" id="myVisualizer"></midi-visualizer>
+<midi-visualizer type="waterfall" id="myVisualizer"></midi-visualizer>
