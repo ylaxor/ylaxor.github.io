@@ -12,4 +12,4 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
   sound-font="https://storage.googleapis.com/magentadata/js/soundfonts/sgm_plus"
   visualizer="#myVisualizer">
 </midi-player>
-<midi-visualizer type="waterfall" id="myVisualizer"></midi-visualizer>
+<midi-visualizer type="piano-roll" id="myVisualizer"></midi-visualizer>
