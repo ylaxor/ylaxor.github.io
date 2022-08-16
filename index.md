@@ -5,14 +5,14 @@ footer{display:none}
 
 #### Introduction  
 <img src="./data/hello.png" alt="welcome" width="196" height="196"/>  
-¬ My name is **Ali**, and I'm a junior **data science research engineer** with a passion for **Deep Learning (DL)** and its applications to automatic ***Natural Language***, ***Audio*** and ***Image*** processing, and, more broadly, for any **creative applications** of Artifical Intelligence (AI).  I hope to share and keep this blog updated with *insightful resources and useful tools* that I've come across so far while working as a data scientist. The [**Curriculum Vitae**](./cv) page contains more information about my academic and professional background. *[Revised in August 2022]*  
+¬ My name is **Ali**, and I'm a junior **data science research engineer** with a passion for **Deep Learning (DL)** and its applications to automatic ***Natural Language***, ***Audio*** and ***Image*** processing, and, more broadly, for any **creative applications** of Artifical Intelligence (AI).  I hope to share and keep this blog updated with *insightful resources and useful tools* that I've come across so far while working as a data scientist. The [**Curriculum Vitae**](./cv) page contains more information about my academic and professional background. Here is an [external link](https://cvdesignr.com/p/62727071870ac) for it. *[Revised in August 2022]*  
 
 
 #### Personal work
-###### **[🧪 Relex: A Python package for building customized and deep-learning-based semantic relation extraction systems.](https://github.com/ylaxor/relex)** 
-###### **[🧪 Intelligent task-oriented dialog system prototype.](./chatbot)** 
+###### **[🧪 Relex: A python package for building customized and deep-learning-based semantic relation extraction systems.](https://github.com/ylaxor/relex)** 
+###### **[🧪 Intelligent task-oriented dialog system (chatbot) prototype.](./chatbot)** 
 ###### **[🧪 Deep learning approach for temporal links extraction between events in french text.](./tlinks)**
-###### **[🧪 Style transfer for symbolic drums: a deep learning approach.](./drums)** 
+###### **[🧪 Style transfer for symbolic drums using deep leaning.](./drums)** 
 
 #### Writings
 ###### [📜 Machine learning, deep learning](./machine-learning-topics)
