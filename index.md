@@ -5,7 +5,7 @@ footer{display:none}
 
 #### Introduction  
 <img src="./data/hello.png" alt="welcome" width="196" height="196"/>  
-¬ My name is **Ali**, and I'm a junior **data science research engineer** with a passion for **Deep Learning (DL)** and its applications to automatic ***Natural Language***, ***Audio*** and ***Image*** processing, and, more broadly, for any **creative applications** of Artifical Intelligence (AI).  I hope to share and keep this blog updated with *insightful resources and useful tools* that I've come across so far while working as a data scientist. The [**Curriculum Vitae**](./cv) page contains more information about my academic and professional background. *[Revised in May 2022]*  
+¬ My name is **Ali**, and I'm a junior **data science research engineer** with a passion for **Deep Learning (DL)** and its applications to automatic ***Natural Language***, ***Audio*** and ***Image*** processing, and, more broadly, for any **creative applications** of Artifical Intelligence (AI).  I hope to share and keep this blog updated with *insightful resources and useful tools* that I've come across so far while working as a data scientist. The [**Curriculum Vitae**](./cv) page contains more information about my academic and professional background. *[Revised in August 2022]*  
 
 
 #### Personal work
