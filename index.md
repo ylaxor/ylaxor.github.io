@@ -14,7 +14,7 @@ footer{display:none}
 ###### **[🧪 Task-oriented dialog system prototype.](./chatbot)** 
 ###### **[🧪 Temporal links extraction between events in french text.](./tlinks)**
 ###### **[🧪 Style transfer for symbolic drums using deep leaning.](./drums)** 
-###### **[🧪 NBA talents classification: a typical machine learning example.](https://github.com/ylaxor/nba-talents-classification)** 
+###### **[🧪 NBA talents classification: a typical machine learning example.](https://ylaxor-nba-talents-classification-gui-lx61ry.streamlitapp.com/)** 
 
 #### Writings (coming soon)
 ###### [📜 Machine learning, deep learning](./#)
