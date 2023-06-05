@@ -8,7 +8,7 @@ footer{display:none}
 ¬ Greetings! I'm Ali, a data scientist who possesses a profound ardor for machine learning and a data-centric, analytical perspective. Presently, I'm pursuing a doctoral degree, and my research interests are inclined towards utilizing machine learning algorithms for inferring everyday human behavior through non-invasive sensorial data modeling. Moreover, I'm captivated by the realm of deep learning and its potential in interpreting natural signals such as language, image, and audio. This personal blog has been crafted to dispense insightful resources and practical tools that I've stumbled upon whilst working with data. By following the links below, you can explore a selection of my works in this field. Additionally, you may check out the [Curriculum Vitae](./cv) (last updated in August 2022) section to delve further into my academic and professional background. I'm thrilled to engage with other data science enthusiasts and share my experiences through this platform.
 
 
-
+Some of the links below might be broken due to the ongoing website update. Please check back later for the updated content.
 
 #### PhD work
 Details about my ongoing research work can be found below.
