@@ -1,22 +1,16 @@
 main:
 
-  - title: Continual Learning for Abdominal Multi-Organ and Tumor Segmentation
-    authors: Yixiao Zhang, Xinyi Li, Huimiao Chen, Alan Yuille, <strong>Yaoyao Liu*</strong>, Zongwei Zhou* (*Corresponding authors)
-    conference_short: MICCAI
-    conference: International Conference on Medical Image Computing and Computer-Assisted Intervention <strong>(MICCAI)</strong>, 2023.
-    pdf: https://arxiv.org/pdf/2306.00988.pdf
-    code: https://github.com/MrGiovanni/ContinualLearning
-    bibtex: https://bib.yliu.me/MICCAI23.txt
-    image: ./assets/img/teaser_example_2.png
-    notes: Early Accept
+  - title: "FlowAR: A Framework for Data-Driven Development of Human Activity Recognition Systems using Binary Sensors"
+    authors: <strong>Ali Ncibi</strong>, Luc Bouganim, Philippe Pucheral
+    conference_short: DCOSS
+    conference: 21st International Conference on Distributed Computing in Smart Systems and the Internet of Things <strong>(DCOSS-IoT)</strong>, 2025.
 
-  - title: "Mnemonics Training: Multi-Class Incremental Learning without Forgetting"
-    authors: <strong>Yaoyao Liu</strong>, Yuting Su, An-An Liu, Bernt Schiele, Qianru Sun
-    conference_short: CVPR
-    conference: IEEE/CVF Conference on Computer Vision and Pattern Recognition <strong>(CVPR)</strong>, 2020.
-    pdf: https://arxiv.org/pdf/2002.10211.pdf
-    code: https://github.com/yaoyao-liu/class-incremental-learning/tree/main/mnemonics-training
-    page: https://class-il.mpi-inf.mpg.de/mnemonics/
-    bibtex: https://class-il.mpi-inf.mpg.de/mnemonics/
-    notes: Oral Presentation
-    image: ./assets/img/teaser_example.png
+  - title: "Towards Domain-Robust Activity Recognition using Textual Representations of Binary Sensor Events"
+    authors: <strong>Ali Ncibi</strong>, Luc Bouganim, Philippe Pucheral
+    conference_short: ICAART
+    conference: 18th International Conference on Agents and Artificial Intelligence <strong>(ICAART)</strong>, 2026.
+
+  - title: "FlowAR: une plateforme uniformisée pour la reconnaissance des activités humaines à partir de capteurs binaires"
+    authors: <strong>Ali Ncibi</strong>, Luc Bouganim, Philippe Pucheral
+    conference_short: EGC
+    conference: Extraction et Gestion des Connaissances <strong>(EGC)</strong>, 2025.
