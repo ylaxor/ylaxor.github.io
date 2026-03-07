@@ -1,0 +1,14 @@
+education:
+  - institution: University of Example
+    degree: BSc in Computer Science
+    location: Paris, France
+    start_year: 2021
+    end_year: 2024
+    description: Focus on software engineering, algorithms, and distributed systems.
+
+  - institution: Example High School
+    degree: Science Baccalaureate
+    location: Lyon, France
+    start_year: 2018
+    end_year: 2021
+    description: Specialized in mathematics and physics.
