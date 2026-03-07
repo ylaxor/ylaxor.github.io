@@ -2,9 +2,10 @@ skills:
 
   - category: Data Science Toolkit
     items:
-      - Supervised and unsupervised learning for classification and clustering tasks
+      - Supervised and unsupervised machine learning (classification and clustering)
       - Descriptive statistics and statistical hypothesis testing
-      - Experience working with multiple data modalities including tabular, image, text, and audio data
+      - "Experience working with multiple data modalities: tabular, image, text, and audio"
+      - Experience with Scikit-learn, PyTorch, and Python data science libraries; model training and deployment
       
   - category: Programming Languages
     items:
