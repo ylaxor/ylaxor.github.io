@@ -26,6 +26,12 @@ projects:
       - Vercel
     demo: https://flux-media-player.vercel.app
 
+  - title: Task-oriented dialog management system (chatbot)
+    description: Designed, implemented, and validated a task-oriented chatbot prototype for handling user queries within a domain-specific ontology (case study: Van Cleef & Arpels jewelry).      
+    technologies:
+      - Pytorch
+      - Streamlit
+
   - title: Temporal-links extraction between medical concepts from french medical text
     description: Designed, implemented, and evaluated a deep learning–based approach for temporal relation (T-link) extraction from French clinical text corpora.
     technologies:
