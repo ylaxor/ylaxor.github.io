@@ -1,16 +1,19 @@
 main:
 
+  - title: "Towards Domain-Robust Activity Recognition using Textual Representations of Binary Sensor Events"
+    authors: <strong>Ali Ncibi</strong>
+    conference_short: ICAART
+    conference: 18th International Conference on Agents and Artificial Intelligence <strong>(ICAART)</strong>, 2026.
+    pdf: https://hal.science/hal-05401764v1
+
   - title: "FlowAR: A Framework for Data-Driven Development of Human Activity Recognition Systems using Binary Sensors"
     authors: <strong>Ali Ncibi</strong>, Luc Bouganim, Philippe Pucheral
     conference_short: DCOSS
     conference: 21st International Conference on Distributed Computing in Smart Systems and the Internet of Things <strong>(DCOSS-IoT)</strong>, 2025.
-
-  - title: "Towards Domain-Robust Activity Recognition using Textual Representations of Binary Sensor Events"
-    authors: <strong>Ali Ncibi</strong>, Luc Bouganim, Philippe Pucheral
-    conference_short: ICAART
-    conference: 18th International Conference on Agents and Artificial Intelligence <strong>(ICAART)</strong>, 2026.
+    pdf: https://hal.science/hal-05213603v1
 
   - title: "FlowAR: une plateforme uniformisée pour la reconnaissance des activités humaines à partir de capteurs binaires"
     authors: <strong>Ali Ncibi</strong>, Luc Bouganim, Philippe Pucheral
     conference_short: EGC
     conference: Extraction et Gestion des Connaissances <strong>(EGC)</strong>, 2025.
+    pdf: https://hal.science/hal-04944889v1
