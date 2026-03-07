@@ -27,7 +27,7 @@ projects:
     description: "A modular, data-driven experimental framework designed to support reproducibility and scientific rigor in the development and evaluation of activity recognition systems for PhD research."
     start: "03/2023"
     end: "02/2026"
-    affiliation: "Part of PhD thesis, INRIA / Université Paris-Saclay"
+    affiliation: "Part of PhD thesis, INRIA/Université Paris-Saclay"
     technologies:
       - "Scikit-learn, scikit-optimize, PyTorch Lightning"
       - "SciPy, NumPy, Pandas"
