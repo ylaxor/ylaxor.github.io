@@ -23,7 +23,7 @@ projects:
       - "Heroku"
     demo: "https://massirah.live"
 
-  - title: "FlowAR (Flows of Activity Recognition)"
+  - title: "FlowAR (Flows of Activity Recognition) Framework"
     description: "A modular, data-driven experimental framework designed to support reproducibility and scientific rigor in the development and evaluation of activity recognition systems for PhD research."
     start: "03/2023"
     end: "02/2026"
