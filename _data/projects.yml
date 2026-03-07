@@ -1,0 +1,20 @@
+projects:
+  - title: Personal Portfolio Website
+    description: A responsive portfolio built with Jekyll and hosted on GitHub Pages.
+    technologies:
+      - Jekyll
+      - HTML
+      - CSS
+      - JavaScript
+    github: https://github.com/username/portfolio
+    demo: https://username.github.io
+
+  - title: Task Manager App
+    description: A web application for managing daily tasks with authentication and REST API.
+    technologies:
+      - Node.js
+      - Express
+      - MongoDB
+      - React
+    github: https://github.com/username/task-manager
+    demo: https://taskmanager-demo.com
