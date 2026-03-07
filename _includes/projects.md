@@ -1,4 +1,4 @@
-<h2 id="projects" style="margin: 2px 0px -15px;">Professional/ personal projects</h2>
+<h2 id="projects" style="margin: 2px 0px -15px;">Professional &  personal projects</h2>
 <br/>
 
 {% for project in site.data.projects.projects %}
