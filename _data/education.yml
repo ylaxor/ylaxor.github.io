@@ -1,14 +1,28 @@
 education:
-  - institution: University of Example
-    degree: BSc in Computer Science
+  - institution: Univeristy of Paris Saclay (UPS)
+    degree: PhD in Computer Science
+    location: UVSQ/INRIA, Versailles/Saclay, France
+    start_year: 2023
+    end_year: 2026
+    description: Focus on the design of structured data-driven pipelines and the evaluation of semantic representation strategies for cross-home human activity recognition from IoT traces
+    
+  - institution: Telecom Paris, Institut Polytechnique de Paris (TPT/IPP)
+    degree: MSc in Data Science
     location: Paris, France
-    start_year: 2021
-    end_year: 2024
-    description: Focus on software engineering, algorithms, and distributed systems.
+    start_year: 2019
+    end_year: 2022
+    description: Focus on numerical optimization, statistical machine learning, computer vision, natural language processing, graph mining, programming, and social & economic sciences.
 
-  - institution: Example High School
-    degree: Science Baccalaureate
-    location: Lyon, France
-    start_year: 2018
-    end_year: 2021
+  - institution: The National Engineering School of Tunis (ENIT)
+    degree: MSc in Information Technology and Telecommunication
+    location: Manar, Tunisia
+    start_year: 2017
+    end_year: 2019
+    description: Focus on signal transmission and processing, networking techniques, programming, databases, and system administration.
+  
+  - institution: Institut préparatoire aux études scientifiques et techniques (IPEST)
+    degree: Preparatory class for the tunisian/french Grandes Ecoles systems
+    location: Marsa, Tunisia
+    start_year: 2014
+    end_year: 2016
     description: Specialized in mathematics and physics.
