@@ -9,6 +9,7 @@ projects:
 
   - title: Massirah CV Builder
     description: A beautiful, responsive, multilingual web application that helps users create clean, ATS-optimized resumes, enhanced with AI-powered job matching and smart suggestions to improve and tailor CVs for specific roles.
+    technologies:
       - Node.js
       - Express
       - PostgreSQL (via Supabase)
