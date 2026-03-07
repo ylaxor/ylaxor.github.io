@@ -1,4 +1,5 @@
 projects:
+
   - title: FlowAR (Flows of Activity Recognition)
     description: A modular, data-driven experimental framework designed to support reproducibility and scientific rigor in the development and evaluation of activity recognition systems for PhD research.
     technologies:
@@ -24,3 +25,28 @@ projects:
       - Nuxt
       - Vercel
     demo: https://flux-media-player.vercel.app
+
+  - title: Temporal-links extraction between medical concepts from french medical text
+    description: Designed, implemented, and evaluated a deep learning–based approach for temporal relation (T-link) extraction from French clinical text corpora.
+    technologies:
+      - Pytorch
+      
+  - title: Style transfer between music accompaniments in MIDI
+    description: Applied deep-learning techniques to automatic music generation. Tweaked a generative model (Groove2Groove https://groove2groove.telecom-paris.fr) for the task.
+    technologies:
+      - Tensorflow
+
+  - title: CNN-based registration of 2D brain tumor images
+    description: Studied a CNN-based approach for the task of brain tumor image registration. Evaluated different training losses, and explored the obtained transformations for examples from Brats MICCAI brain tumor dataset.
+    technologies:
+      - Tensorflow
+
+  - title: Arrhythmia detection from ECG data
+    description: Designed and implemented an automated neural network for arrhythmia detection through the analysis of patients medical ECG recordings. Evaluated performance on examples from MIT-BIH Arrhythmia Database.
+    technologies:
+      - Tensorflow
+    
+  - title: Network standards for IoT apps. in healthcare
+    description: Reviewed and discussed networking trends for IoT in healthcare applications.
+    technologies:
+      - Tensorflow
