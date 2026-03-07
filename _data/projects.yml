@@ -1,15 +1,21 @@
 projects:
 
-  - title: FlowAR (Flows of Activity Recognition)
-    description: A modular, data-driven experimental framework designed to support reproducibility and scientific rigor in the development and evaluation of activity recognition systems for PhD research.
+  - title: Flux Media Player
+    description: A media player and library organizer for personal streaming servers, enabling users to stream and manage IPTV content (Xtream and M3U) through a beautiful, responsive, and unified interface.
+    start: 12/2025
+    end: ongoing
+    affiliation: Personal online project
     technologies:
-      - Scikit-learn, scikit-optim, Pytorch (Lightning)
-      - Scipy, Numpy, Pandas
-      - Matplotlib, Plotly
-      - Streamlit
-
+      - Node.js
+      - Nuxt
+      - Vercel
+    demo: https://flux-media-player.vercel.app
+    
   - title: Massirah CV Builder
     description: A beautiful, responsive, multilingual web application that helps users create clean, ATS-optimized resumes, enhanced with AI-powered job matching and smart suggestions to improve and tailor CVs for specific roles.
+    start: 06/2025
+    end: ongoing
+    affiliation: Personal online project
     technologies:
       - Node.js
       - Express
@@ -17,42 +23,63 @@ projects:
       - React
       - Heroku
     demo: https://massirah.live
-
-  - title: Flux Media Player
-    description: A media player and library organizer for personal streaming servers, enabling users to stream and manage IPTV content (Xtream and M3U) through a beautiful, responsive, and unified interface.
+    
+  - title: FlowAR (Flows of Activity Recognition)
+    description: A modular, data-driven experimental framework designed to support reproducibility and scientific rigor in the development and evaluation of activity recognition systems for PhD research.
+    start: 03/2023
+    end: 02/2026
+    affiliation: Part of PhD thesis, INRIA / Université Paris-Saclay
     technologies:
-      - Node.js
-      - Nuxt
-      - Vercel
-    demo: https://flux-media-player.vercel.app
+      - Scikit-learn, scikit-optim, Pytorch (Lightning)
+      - Scipy, Numpy, Pandas
+      - Matplotlib, Plotly
+      - Streamlit
 
   - title: Task-oriented dialog management system (chatbot)
     description: Designed, implemented, and validated a task-oriented chatbot prototype for handling user queries within a domain-specific ontology (case study: Van Cleef & Arpels jewelry).      
+    start: 10/2021
+    end: 05/2022
+    affiliation: Freelance mission as data science engineer, SouthPigalle (later part of Metyis groups), Paris.
     technologies:
       - Pytorch
       - Streamlit
 
   - title: Temporal-links extraction between medical concepts from french medical text
     description: Designed, implemented, and evaluated a deep learning–based approach for temporal relation (T-link) extraction from French clinical text corpora.
+    start: 03/2021
+    end: 08/2021
+    affiliation: End-of-study internship, INSERM, Paris.
     technologies:
       - Pytorch
       
   - title: Style transfer between music accompaniments in MIDI
     description: Applied deep-learning techniques to automatic music generation. Tweaked a generative model (Groove2Groove https://groove2groove.telecom-paris.fr) for the task.
+    start: 09/2020
+    end: 02/2021
+    affiliation: Research internship, LTCI lab., Telecom Paris.
     technologies:
       - Tensorflow
 
   - title: CNN-based registration of 2D brain tumor images
     description: Studied a CNN-based approach for the task of brain tumor image registration. Evaluated different training losses, and explored the obtained transformations for examples from Brats MICCAI brain tumor dataset.
+    start: 01/2020
+    end: 03/2020
+    affiliation: Academic project, LTCI lab., Telecom Paris.
     technologies:
       - Tensorflow
 
   - title: Arrhythmia detection from ECG data
     description: Designed and implemented an automated neural network for arrhythmia detection through the analysis of patients medical ECG recordings. Evaluated performance on examples from MIT-BIH Arrhythmia Database.
+    start: 02/2019
+    end: 04/2019
+    affiliation: Academic project, ENIT, Tunisia.
     technologies:
       - Tensorflow
     
   - title: Network standards for IoT apps. in healthcare
     description: Reviewed and discussed networking trends for IoT in healthcare applications.
+    start: 03/2018
+    end: 05/2018
+    affiliation: Academic project, ENIT, Tunisia.
     technologies:
       - Tensorflow
