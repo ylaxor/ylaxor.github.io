@@ -1,0 +1,21 @@
+skills:
+  - category: Programming Languages
+    items:
+      - Python
+      - JavaScript
+      - C++
+      - SQL
+
+  - category: Web Development
+    items:
+      - HTML
+      - CSS
+      - React
+      - Node.js
+
+  - category: Tools & Technologies
+    items:
+      - Git
+      - Docker
+      - Linux
+      - AWS
