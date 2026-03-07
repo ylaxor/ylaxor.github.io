@@ -1,0 +1,10 @@
+@inproceedings{ncibiFlowAR2025a,
+  title = {{FlowAR: une plateforme uniformis{\'e}e pour la reconnaissance des activit{\'e}s humaines {\`a} partir de capteurs binaires}},
+  author = {Ncibi, Ali and Bouganim, Luc and Pucheral, Philippe},
+  booktitle = {{25ème conférence francophone sur l'Extraction et la Gestion des Connaissances (EGC)}},
+  series = {RNTI-E},
+  number = {41},
+  pages = {pp.503-510},
+  year = {2025},
+  month = Jan,
+}
