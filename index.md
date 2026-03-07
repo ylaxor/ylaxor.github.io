@@ -10,7 +10,6 @@ I enjoy building systems, exploring ideas, and turning complex problems into pra
 ## Research Interests
 
 - Machine Learning
-- IoT Data Analysis
 - Human Activity Recognition
 - Intelligent Systems
 - Applied AI for real-world environments
