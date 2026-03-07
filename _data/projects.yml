@@ -9,12 +9,12 @@ projects:
     github: https://github.com/username/portfolio
     demo: https://username.github.io
 
-  - title: Task Manager App
-    description: A web application for managing daily tasks with authentication and REST API.
+  - title: Massirah - Modern CV Builder
+    description: A web application that helps users create clean, ATS-optimized resumes, with AI-powered job matching and smart suggestions to improve and tailor CVs for specific roles.
     technologies:
       - Node.js
       - Express
-      - MongoDB
+      - PostgreSQL (via Supabase)
       - React
-    github: https://github.com/username/task-manager
-    demo: https://taskmanager-demo.com
+      - Heroku
+    demo: https://massirah.live
