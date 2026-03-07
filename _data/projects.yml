@@ -1,85 +1,84 @@
 projects:
+  - title: "Flux Media Player"
+    description: "A media player and library organizer for personal streaming servers, enabling users to stream and manage IPTV content (Xtream and M3U) through a beautiful, responsive, and unified interface."
+    start: "12/2025"
+    end: "Ongoing"
+    affiliation: "Personal online project"
+    technologies:
+      - "Node.js"
+      - "Nuxt"
+      - "Vercel"
+    demo: "https://flux-media-player.vercel.app"
 
-  - title: Flux Media Player
-    description: A media player and library organizer for personal streaming servers, enabling users to stream and manage IPTV content (Xtream and M3U) through a beautiful, responsive, and unified interface.
-    start: 12/2025
-    end: ongoing
-    affiliation: Personal online project
+  - title: "Massirah CV Builder"
+    description: "A beautiful, responsive, multilingual web application that helps users create clean, ATS-optimized resumes, enhanced with AI-powered job matching and smart suggestions to improve and tailor CVs for specific roles."
+    start: "06/2025"
+    end: "Ongoing"
+    affiliation: "Personal online project"
     technologies:
-      - Node.js
-      - Nuxt
-      - Vercel
-    demo: https://flux-media-player.vercel.app
-    
-  - title: Massirah CV Builder
-    description: A beautiful, responsive, multilingual web application that helps users create clean, ATS-optimized resumes, enhanced with AI-powered job matching and smart suggestions to improve and tailor CVs for specific roles.
-    start: 06/2025
-    end: ongoing
-    affiliation: Personal online project
-    technologies:
-      - Node.js
-      - Express
-      - PostgreSQL (via Supabase)
-      - React
-      - Heroku
-    demo: https://massirah.live
-    
-  - title: FlowAR (Flows of Activity Recognition)
-    description: A modular, data-driven experimental framework designed to support reproducibility and scientific rigor in the development and evaluation of activity recognition systems for PhD research.
-    start: 03/2023
-    end: 02/2026
-    affiliation: Part of PhD thesis, INRIA / Université Paris-Saclay
-    technologies:
-      - Scikit-learn, scikit-optim, Pytorch (Lightning)
-      - Scipy, Numpy, Pandas
-      - Matplotlib, Plotly
-      - Streamlit
+      - "Node.js"
+      - "Express"
+      - "PostgreSQL (via Supabase)"
+      - "React"
+      - "Heroku"
+    demo: "https://massirah.live"
 
-  - title: Task-oriented dialog management system (chatbot)
-    description: Designed, implemented, and validated a task-oriented chatbot prototype for handling user queries within a domain-specific ontology (case study: Van Cleef & Arpels jewelry).      
-    start: 10/2021
-    end: 05/2022
-    affiliation: Freelance mission as data science engineer, SouthPigalle (later part of Metyis groups), Paris.
+  - title: "FlowAR (Flows of Activity Recognition)"
+    description: "A modular, data-driven experimental framework designed to support reproducibility and scientific rigor in the development and evaluation of activity recognition systems for PhD research."
+    start: "03/2023"
+    end: "02/2026"
+    affiliation: "Part of PhD thesis, INRIA / Université Paris-Saclay"
     technologies:
-      - Pytorch
-      - Streamlit
+      - "Scikit-learn, scikit-optimize, PyTorch Lightning"
+      - "SciPy, NumPy, Pandas"
+      - "Matplotlib, Plotly"
+      - "Streamlit"
 
-  - title: Temporal-links extraction between medical concepts from french medical text
-    description: Designed, implemented, and evaluated a deep learning–based approach for temporal relation (T-link) extraction from French clinical text corpora.
-    start: 03/2021
-    end: 08/2021
-    affiliation: End-of-study internship, INSERM, Paris.
+  - title: "Task-oriented dialog management system (chatbot)"
+    description: "Designed, implemented, and validated a task-oriented chatbot prototype for handling user queries within a domain-specific ontology (case study: Van Cleef & Arpels jewelry)."
+    start: "10/2021"
+    end: "05/2022"
+    affiliation: "Freelance mission as a data science engineer, SouthPigalle (later part of Metyis Group), Paris."
     technologies:
-      - Pytorch
-      
-  - title: Style transfer between music accompaniments in MIDI
-    description: Applied deep-learning techniques to automatic music generation. Tweaked a generative model (Groove2Groove https://groove2groove.telecom-paris.fr) for the task.
-    start: 09/2020
-    end: 02/2021
-    affiliation: Research internship, LTCI lab., Telecom Paris.
-    technologies:
-      - Tensorflow
+      - "PyTorch"
+      - "Streamlit"
 
-  - title: CNN-based registration of 2D brain tumor images
-    description: Studied a CNN-based approach for the task of brain tumor image registration. Evaluated different training losses, and explored the obtained transformations for examples from Brats MICCAI brain tumor dataset.
-    start: 01/2020
-    end: 03/2020
-    affiliation: Academic project, LTCI lab., Telecom Paris.
+  - title: "Temporal-links extraction between medical concepts from French medical text"
+    description: "Designed, implemented, and evaluated a deep learning-based approach for temporal relation (T-link) extraction from French clinical text corpora."
+    start: "03/2021"
+    end: "08/2021"
+    affiliation: "End-of-study internship, INSERM, Paris."
     technologies:
-      - Tensorflow
+      - "PyTorch"
 
-  - title: Arrhythmia detection from ECG data
-    description: Designed and implemented an automated neural network for arrhythmia detection through the analysis of patients medical ECG recordings. Evaluated performance on examples from MIT-BIH Arrhythmia Database.
-    start: 02/2019
-    end: 04/2019
-    affiliation: Academic project, ENIT, Tunisia.
+  - title: "Style transfer between music accompaniments in MIDI"
+    description: "Applied deep learning techniques to automatic music generation. Tweaked a generative model (Groove2Groove: https://groove2groove.telecom-paris.fr) for the task."
+    start: "09/2020"
+    end: "02/2021"
+    affiliation: "Research internship, LTCI Lab, Télécom Paris."
     technologies:
-      - Tensorflow
-    
-  - title: Network standards for IoT apps. in healthcare
-    description: Reviewed and discussed networking trends for IoT in healthcare applications.
-    start: 03/2018
-    end: 05/2018
-    affiliation: Academic project, ENIT, Tunisia.
+      - "TensorFlow"
+
+  - title: "CNN-based registration of 2D brain tumor images"
+    description: "Studied a CNN-based approach for brain tumor image registration. Evaluated different training losses and explored the resulting transformations on examples from the BraTS MICCAI brain tumor dataset."
+    start: "01/2020"
+    end: "03/2020"
+    affiliation: "Academic project, LTCI Lab, Télécom Paris."
     technologies:
-      - Tensorflow
+      - "TensorFlow"
+
+  - title: "Arrhythmia detection from ECG data"
+    description: "Designed and implemented a neural network for arrhythmia detection through the analysis of patient ECG recordings. Evaluated performance on examples from the MIT-BIH Arrhythmia Database."
+    start: "02/2019"
+    end: "04/2019"
+    affiliation: "Academic project, ENIT, Tunisia."
+    technologies:
+      - "TensorFlow"
+
+  - title: "Network standards for IoT applications in healthcare"
+    description: "Reviewed and discussed networking trends for IoT in healthcare applications."
+    start: "03/2018"
+    end: "05/2018"
+    affiliation: "Academic project, ENIT, Tunisia."
+    technologies:
+      - "Networking / IoT"
