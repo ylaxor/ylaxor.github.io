@@ -20,7 +20,7 @@ main:
   - title: "FlowAR: une plateforme uniformisée pour la reconnaissance des activités humaines à partir de capteurs binaires"
     authors: <strong>Ali Ncibi</strong>, Luc Bouganim, Philippe Pucheral
     conference_short: EGC
-    conference: Extraction et Gestion des Connaissances <strong>(EGC)</strong>, 2025.
+    conference: 25ème conférence francophone Extraction et Gestion des Connaissances <strong>(EGC)</strong>, 2025.
     pdf: https://hal.science/hal-04944889v1
     bibtex: https://alincibi.me/assets/bibtex/flowar_egc
     image: ./assets/img/flowar_egc.png
