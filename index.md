@@ -2,7 +2,7 @@
 layout: homepage
 ---
 
-## About Me
+## About
 
 Computer science researcher and engineer with hands-on experience building software systems and machine learning
 models through my PhD and early professional or personal projects. I bring theoretical rigor, practical model-development
