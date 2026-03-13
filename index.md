@@ -4,8 +4,9 @@ layout: homepage
 
 ## About Me
 
-Researcher and engineer interested in machine learning, data, and intelligent systems.
-I enjoy building systems, exploring ideas, and turning complex problems into practical solutions.
+Computer science researcher and engineer with hands-on experience building software systems and machine learning
+models through my PhD and early professional or personal projects. I bring theoretical rigor, practical model-development
+expertise, and a systems-oriented mindsetto deliver data-driven, reproducible, production-ready software solutions.
 
 ## Research Interests
 
