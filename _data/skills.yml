@@ -12,6 +12,7 @@ skills:
       - Python
       - JavaScript
       - C/C++, C#
+      - R
       - SQL
   
   - category: Web & Mobile Development
@@ -27,5 +28,5 @@ skills:
       - "Version control: Git"
       - "Containerization: Docker"
       - "Operating systems: Linux, macOS, Windows"
-      - "Cloud platforms: AWS, Google Cloud Platform (GCP), Heroku, DigitalOcean"
-      - "Productivity & authoring tools: Microsoft Office, Adobe Creative Suite, LaTeX"
+      - "Cloud platforms: Amazon Web Services (AWS), Google Cloud Platform (GCP), Heroku, DigitalOcean, Supabase, Vercel, Netlify, etc."
+      - "Productivity & authoring tools: Microsoft Office, Adobe Creative Suite, LaTeX, Draw.io"
