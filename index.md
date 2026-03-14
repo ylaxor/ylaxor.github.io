@@ -6,7 +6,7 @@ layout: homepage
 
 Computer science researcher and engineer with hands-on experience building software systems and machine learning
 models through my PhD and early professional or personal projects. I bring theoretical rigor, practical model-development
-expertise, and a systems-oriented mindsetto deliver data-driven, reproducible, production-ready software solutions.
+expertise, and a systems-oriented mindset to deliver data-driven, reproducible, production-ready software solutions.
 
 ## Research Interests
 
