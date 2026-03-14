@@ -2,10 +2,10 @@ skills:
 
   - category: Data Science Toolkit
     items:
-      - Supervised and unsupervised machine learning (classification and clustering)
-      - Descriptive statistics and statistical hypothesis testing
+      - "Theory: Descriptive statistics and statistical hypothesis testing, Statistical Machine Learning, Ensemble Learning, Dimension Reduction, Deep Learning, Multi-task Learning, Meta Learning, Self-Supervised Learning, Natural Language Processing, Computer Vision, Graph Mining, Activity Learning."
+      - "Tools & libraries (development, evaluation and deployment): PyTorch, Tensorflow, Keras, Flair NLP, NLTK, Spacy, Transformers, Pandas, Scikitlearn/network/optim, Matplotlib, Seaborn, Plotly,Jupyter, ONNX, Tensorflow Js, Streamlit, Flask, FastAPI, etc."
       - "Experience working with multiple data modalities: tabular, image, text, and audio"
-      - Experience with Scikit-learn, PyTorch, and Python data science libraries; model training and deployment
+      - "Experience with Scikit-learn, PyTorch, and Python data science libraries; model training and deployment (see CV for more details)."
       
   - category: Programming Languages
     items:
