@@ -4,7 +4,7 @@ skills:
     items:
       - "Theory: Descriptive statistics and statistical hypothesis testing, Statistical Machine Learning, Ensemble Learning, Dimension Reduction, Deep Learning, Multi-task Learning, Meta Learning, Self-Supervised Learning, Natural Language Processing, Computer Vision, Graph Mining, Activity Learning."
       - "Tools & libraries (development, evaluation and deployment): PyTorch, Tensorflow, Keras, Flair NLP, NLTK, Spacy, Transformers, Pandas, Scikitlearn/network/optim, Matplotlib, Seaborn, Plotly,Jupyter, ONNX, Tensorflow Js, Streamlit, Flask, FastAPI, etc."
-      - "Experience working with multiple data modalities: tabular, image, text, and audio (see CV for more details)."
+      - "Experience working with multiple data modalities: tabular, image, text, audio and other forms of sequential data (see CV for more details)."
       
   - category: Programming Languages
     items:
