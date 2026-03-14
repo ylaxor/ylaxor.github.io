@@ -1,6 +1,6 @@
 projects:
   - title: "Flux Media Player"
-    description: "A media player and library organizer for personal streaming servers, enabling users to stream and manage IPTV content (Xtream and M3U) through a beautiful, responsive, and unified interface."
+    description: "A media player and library organizer for personal streaming servers, enabling users to stream and manage IPTV content (Xtream and M3U) through a modern web-based interface."
     start: "12/2025"
     end: "Ongoing"
     affiliation: "Personal online project"
@@ -24,30 +24,31 @@ projects:
     demo: "https://massirah.live"
 
   - title: "FlowAR (Flows of Activity Recognition) Framework"
-    description: "A modular, data-driven experimental framework designed to support reproducibility and scientific rigor in the development and evaluation of activity recognition systems for PhD research."
+    description: "A modular, data-driven operational experimentalframework designed to support reproducibility and scientific rigor in the development and evaluation of activity recognition systems. Realized as part of PhD research."
     start: "03/2023"
     end: "02/2026"
-    affiliation: "Part of PhD thesis, INRIA/Université Paris-Saclay"
+    affiliation: "INRIA/Université Paris-Saclay"
     technologies:
       - "Scikit-learn, scikit-optimize, PyTorch Lightning"
       - "SciPy, NumPy, Pandas"
       - "Matplotlib, Plotly"
       - "Streamlit"
+    github: "https://github.com/ylaxor/flowar"
 
   - title: "Task-oriented dialog management system (chatbot)"
     description: "Designed, implemented, and validated a task-oriented chatbot prototype for handling user queries within a domain-specific ontology (case study: Van Cleef & Arpels jewelry)."
     start: "10/2021"
     end: "05/2022"
-    affiliation: "Freelance mission as a data science engineer, SouthPigalle (later part of Metyis Group), Paris."
+    affiliation: "Freelance mission as data science engineer, SouthPigalle (later part of Metyis Group), Paris."
     technologies:
       - "PyTorch"
       - "Streamlit"
 
-  - title: "Temporal-links extraction between medical concepts from French medical text"
-    description: "Designed, implemented, and evaluated a deep learning-based approach for temporal relation (T-link) extraction from French clinical text corpora."
+  - title: "Temporal-links extraction between medical concepts in french medical text"
+    description: "Designed, implemented and validated a supervised deep-learning-based solution forthe task oftemporal links (ISO-TimeML, TLINK) extraction between medical events (concepts) in a french text."
     start: "03/2021"
     end: "08/2021"
-    affiliation: "End-of-study internship, INSERM, Paris."
+    affiliation: "End-of-study research project, INSERM, Paris."
     technologies:
       - "PyTorch"
 
@@ -55,7 +56,7 @@ projects:
     description: "Applied deep learning techniques to automatic music generation. Tweaked a generative model (Groove2Groove: https://groove2groove.telecom-paris.fr) for the task."
     start: "09/2020"
     end: "02/2021"
-    affiliation: "Research internship, LTCI Lab, Télécom Paris."
+    affiliation: "Research project, LTCI Lab., Télécom Paris."
     technologies:
       - "TensorFlow"
 
@@ -63,7 +64,7 @@ projects:
     description: "Studied a CNN-based approach for brain tumor image registration. Evaluated different training losses and explored the resulting transformations on examples from the BraTS MICCAI brain tumor dataset."
     start: "01/2020"
     end: "03/2020"
-    affiliation: "Academic project, LTCI Lab, Télécom Paris."
+    affiliation: "Academic project, LTCI Lab., Télécom Paris."
     technologies:
       - "TensorFlow"
 
@@ -71,7 +72,7 @@ projects:
     description: "Designed and implemented a neural network for arrhythmia detection through the analysis of patient ECG recordings. Evaluated performance on examples from the MIT-BIH Arrhythmia Database."
     start: "02/2019"
     end: "04/2019"
-    affiliation: "Academic project, ENIT, Tunisia."
+    affiliation: "Academic project, RISC Lab., Tunisia."
     technologies:
       - "TensorFlow"
 
@@ -79,6 +80,6 @@ projects:
     description: "Reviewed and discussed networking trends for IoT in healthcare applications."
     start: "03/2018"
     end: "05/2018"
-    affiliation: "Academic project, ENIT, Tunisia."
+    affiliation: "Academic project, RISC Lab., Tunisia."
     technologies:
       - "Networking/IoT"
