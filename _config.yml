@@ -6,8 +6,8 @@ email: contact (at) alincibi.me
 
 # Search Engine Optimization (SEO)
 # The following information is used to improve the website traffic from search engines, e.g., Google.
-keywords: ali ncibi, research engineer, computer science
-description: Computer science researcher-engineer | Personal homepage
+keywords: ali ncibi, researcher-engineer, computer science
+description: Personal homepage of Ali NCIBI, computer science researcher-engineer.
 canonical: https://alincibi.me
 
 # Links 
@@ -31,7 +31,7 @@ enable_footnote: false
 
 # Auto Dark Mode
 # You may use the option to disable the automatic dark theme
-auto_dark_mode: true
+auto_dark_mode: false
 
 # Font
 # You can use this option to choose between Serif or Sans Serif fonts.
