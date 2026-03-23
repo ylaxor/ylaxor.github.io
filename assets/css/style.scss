@@ -2,3 +2,21 @@
 ---
 
 @import "minimal-light";
+
+/* Social icons grid */
+.social-icons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+  gap: 10px;
+  justify-items: center;
+}
+
+.social-icons a {
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  transform: scale(1.15);
+  transition: 0.2s ease;
+}
