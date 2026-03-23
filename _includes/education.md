@@ -1,4 +1,4 @@
-<h2 id="projects" style="margin: 2px 0px -15px;">Education</h2>
+<h2 id="education" style="margin: 2px 0px -15px;">Education</h2>
 <br/>
 
 {% for edu in site.data.education.education %}
