@@ -1,4 +1,6 @@
 <h2 id="publications" style="margin: 2px 0px -15px;">Selected Publications</h2>
+<div class="publications">
+<ol class="bibliography">
 {% for link in site.data.publications.main %}
 <li>
 <div class="publication-item">
@@ -40,4 +42,5 @@
 </li>
 <br>
 {% endfor %}
-
+</ol>
+</div>
