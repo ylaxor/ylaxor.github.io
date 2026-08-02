@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ylaxor.github.io/my-website-github-pages/sitemap-index.xml
+Sitemap: https://ylaxor.github.io/sitemap-index.xml
