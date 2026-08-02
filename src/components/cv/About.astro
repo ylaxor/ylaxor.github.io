@@ -1,0 +1,41 @@
+---
+import Section from '@/components/ui/Section.astro';
+import { cv } from '@/data/cv';
+import { siteConfig } from '@/data/site';
+---
+
+<Section id="about" title="About">
+  <div class="about-grid">
+    <div class="about-copy">
+      <p>{cv.tagline}</p>
+      <p>
+        Currently a PhD candidate at {cv.experience[0]?.company ?? 'INRIA'},
+        where I design modular machine learning frameworks and benchmark
+        semantic representation strategies for cross-home human activity
+        recognition from binary IoT traces.
+      </p>
+      <div class="about-actions">
+        <a class="btn btn-secondary" href={`mailto:${siteConfig.email}`}>
+          Get in Touch
+        </a>
+      </div>
+    </div>
+  </div>
+</Section>
+
+<style>
+  .about-grid {
+    max-width: var(--measure);
+  }
+
+  .about-copy p {
+    color: var(--color-text-muted);
+  }
+
+  .about-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-3);
+    margin-top: var(--space-5);
+  }
+</style>

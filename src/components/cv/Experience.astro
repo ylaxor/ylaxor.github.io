@@ -1,0 +1,18 @@
+---
+import Section from '@/components/ui/Section.astro';
+import Timeline from '@/components/ui/Timeline.astro';
+import { cv } from '@/data/cv';
+
+const items = cv.experience.map((exp) => ({
+  title: exp.title,
+  subtitle: `${exp.company} · ${exp.role}`,
+  location: exp.location,
+  period: `${exp.start} — ${exp.end}`,
+  duration: exp.duration,
+  points: exp.points,
+}));
+---
+
+<Section id="experience" title="Professional Experience">
+  <Timeline items={items} timeline="experience" />
+</Section>

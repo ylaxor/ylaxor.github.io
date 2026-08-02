@@ -1,0 +1,151 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Tag from '@/components/ui/Tag.astro';
+import { baseUrl } from '@/data/site';
+import { formatDate, getReadingTime } from '@/utils/date';
+
+interface Props {
+  title: string;
+  description: string;
+  pubDate: Date;
+  updatedDate?: Date;
+  tags?: string[];
+  heroImage?: string;
+  body: string;
+}
+
+const {
+  title,
+  description,
+  pubDate,
+  updatedDate,
+  tags = [],
+  heroImage,
+  body,
+} = Astro.props;
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  type="article"
+  publishedTime={pubDate.toISOString()}
+  updatedTime={updatedDate?.toISOString() ?? pubDate.toISOString()}
+>
+  <div class="container container-narrow">
+    <article class="post">
+      <header class="post-header">
+        <p class="post-back">
+          <a href={baseUrl('/blog/')}>&larr; All posts</a>
+        </p>
+
+        <h1 class="post-title">{title}</h1>
+        <p class="post-description">{description}</p>
+
+        <div class="post-meta">
+          <time datetime={pubDate.toISOString()}>{formatDate(pubDate)}</time>
+          {
+            updatedDate && pubDate.getTime() !== updatedDate.getTime() && (
+              <span class="post-updated">
+                Updated {formatDate(updatedDate)}
+              </span>
+            )
+          }
+          <span>{getReadingTime(body)}</span>
+        </div>
+
+        {
+          tags.length > 0 && (
+            <ul class="post-tags" role="list">
+              {tags.map((tag) => (
+                <li>
+                  <Tag label={tag} />
+                </li>
+              ))}
+            </ul>
+          )
+        }
+      </header>
+
+      {
+        heroImage && (
+          <img
+            class="post-hero"
+            src={heroImage}
+            alt=""
+            width={1200}
+            height={630}
+          />
+        )
+      }
+
+      <div class="post-content prose">
+        <slot />
+      </div>
+
+      <footer class="post-footer">
+        <div class="post-divider" aria-hidden="true"></div>
+        <a class="post-back" href={baseUrl('/blog/')}
+          >&larr; Back to all posts</a
+        >
+      </footer>
+    </article>
+  </div>
+</BaseLayout>
+
+<style>
+  .post {
+    padding-block: var(--space-12) var(--space-16);
+  }
+
+  .post-header {
+    margin-bottom: var(--space-10);
+  }
+
+  .post-back {
+    font-size: var(--text-sm);
+    margin-bottom: var(--space-6);
+  }
+
+  .post-title {
+    font-size: var(--text-3xl);
+    letter-spacing: var(--letter-spacing-tight);
+    margin-bottom: var(--space-4);
+  }
+
+  .post-description {
+    font-size: var(--text-lg);
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-6);
+    max-width: var(--measure);
+  }
+
+  .post-updated {
+    font-style: italic;
+  }
+
+  .post-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    margin-top: var(--space-6);
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .post-hero {
+    border-radius: var(--radius-xl);
+    border: 1px solid var(--color-border);
+    margin-bottom: var(--space-10);
+  }
+
+  .post-footer {
+    margin-top: var(--space-16);
+  }
+
+  .post-divider {
+    border-top: 1px solid var(--color-border);
+    margin-bottom: var(--space-8);
+  }
+</style>

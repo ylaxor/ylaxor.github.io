@@ -1,0 +1,34 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import Hero from '@/components/cv/Hero.astro';
+import Languages from '@/components/cv/Languages.astro';
+import Education from '@/components/cv/Education.astro';
+import Experience from '@/components/cv/Experience.astro';
+import Skills from '@/components/cv/Skills.astro';
+import ComputerSkills from '@/components/cv/ComputerSkills.astro';
+---
+
+<BaseLayout>
+  <Hero />
+  <div class="container page home-page">
+    <Experience />
+    <Education />
+    <Skills />
+    <Languages />
+    <ComputerSkills />
+  </div>
+</BaseLayout>
+
+<style>
+  .home-page {
+    gap: var(--space-4);
+  }
+
+  .home-page :global(.section) {
+    padding-block: var(--space-6);
+  }
+
+  .home-page :global(.section-header) {
+    margin-bottom: var(--space-4);
+  }
+</style>

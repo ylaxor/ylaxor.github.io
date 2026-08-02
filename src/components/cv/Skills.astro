@@ -1,0 +1,175 @@
+---
+import Section from '@/components/ui/Section.astro';
+import { cv } from '@/data/cv';
+
+const { foundations, modalities, toolkit } = cv.dataSkills;
+---
+
+<Section id="skills" title="Data & AI Skills">
+  <div class="skills-grid">
+    <article class="card skills-block skills-block-foundations">
+      <div class="skills-block-head">
+        <p class="skills-kicker">Core theory</p>
+        <h3 class="skills-block-title">{foundations.title}</h3>
+      </div>
+      <ul class="skills-list" role="list">
+        {
+          foundations.groups.map((skill) => (
+            <li class="skills-item">
+              <span class="skills-chip" aria-hidden="true"></span>
+              <span>{skill}</span>
+            </li>
+          ))
+        }
+      </ul>
+    </article>
+
+    <article class="card skills-block skills-block-modalities">
+      <div class="skills-block-head">
+        <p class="skills-kicker">Applied work</p>
+        <h3 class="skills-block-title">{modalities.title}</h3>
+      </div>
+      <ul class="skills-list" role="list">
+        {
+          modalities.groups.map((skill) => (
+            <li class="skills-item">
+              <span class="skills-chip" aria-hidden="true"></span>
+              <span>{skill}</span>
+            </li>
+          ))
+        }
+      </ul>
+    </article>
+
+    <article class="card skills-block skills-block-toolkit">
+      <div class="skills-block-head">
+        <p class="skills-kicker">Tooling stack</p>
+        <h3 class="skills-block-title">{toolkit.title}</h3>
+      </div>
+      <ul class="skills-list" role="list">
+        {
+          toolkit.groups.map((skill) => (
+            <li class="skills-item">
+              <span class="skills-chip" aria-hidden="true"></span>
+              <span>{skill}</span>
+            </li>
+          ))
+        }
+      </ul>
+    </article>
+  </div>
+</Section>
+
+<style>
+  .skills-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  @media (min-width: 1024px) {
+    .skills-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .skills-block {
+    height: 100%;
+    padding: var(--space-5);
+    overflow: hidden;
+    position: relative;
+  }
+
+  .skills-block::before {
+    content: '';
+    position: absolute;
+    inset: 0 auto auto 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+  }
+
+  .skills-block-head {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-1);
+    margin-bottom: var(--space-4);
+  }
+
+  .skills-block-title {
+    font-size: var(--text-lg);
+    margin: 0;
+  }
+
+  .skills-kicker {
+    margin: 0;
+    color: var(--color-primary);
+    font-size: var(--text-xs);
+    font-weight: var(--font-weight-semibold);
+    text-transform: uppercase;
+    letter-spacing: var(--letter-spacing-wide);
+  }
+
+  .skills-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .skills-item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-3);
+    font-size: var(--text-sm);
+    line-height: var(--line-height-relaxed);
+    padding: var(--space-3);
+    border-radius: var(--radius-lg);
+    background: linear-gradient(
+      180deg,
+      var(--color-bg-subtle),
+      color-mix(in srgb, var(--color-bg-elevated) 60%, transparent)
+    );
+    border: 1px solid color-mix(in srgb, var(--color-border) 85%, transparent);
+  }
+
+  .skills-chip {
+    flex-shrink: 0;
+    margin-top: 0.4rem;
+    width: 0.6rem;
+    height: 0.6rem;
+    border-radius: var(--radius-full);
+    background: linear-gradient(
+      135deg,
+      var(--color-primary),
+      var(--color-accent)
+    );
+    box-shadow: 0 0 0 4px var(--color-primary-soft);
+  }
+
+  .skills-block-foundations {
+    background: linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--color-primary-soft) 34%, transparent),
+      var(--color-bg-elevated)
+    );
+  }
+
+  .skills-block-modalities {
+    background: linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--color-accent) 12%, transparent),
+      var(--color-bg-elevated)
+    );
+  }
+
+  .skills-block-toolkit {
+    background: linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--color-success) 12%, transparent),
+      var(--color-bg-elevated)
+    );
+  }
+</style>

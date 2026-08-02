@@ -1,0 +1,199 @@
+---
+interface Item {
+  title: string;
+  subtitle?: string;
+  location?: string;
+  period: string;
+  duration?: string;
+  points?: string[];
+  badges?: string[];
+}
+
+interface Props {
+  items: Item[];
+  timeline: 'education' | 'experience';
+}
+
+const { items } = Astro.props;
+---
+
+<ol class="timeline" role="list">
+  {
+    items.map((item) => (
+      <li class="timeline-item">
+        <div class="timeline-marker" aria-hidden="true">
+          <span class="timeline-dot" />
+        </div>
+        <div class="timeline-content">
+          <div class="timeline-head">
+            <div class="timeline-heading">
+              <h3 class="timeline-title">{item.title}</h3>
+              {item.subtitle && (
+                <p class="timeline-subtitle">{item.subtitle}</p>
+              )}
+            </div>
+            <span class="timeline-period tag tag-primary">{item.period}</span>
+          </div>
+
+          {item.location && (
+            <p class="timeline-location">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                aria-hidden="true"
+              >
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              {item.location}
+            </p>
+          )}
+
+          {item.points && item.points.length > 0 && (
+            <ul class="timeline-points" role="list">
+              {item.points.map((point) => (
+                <li>{point}</li>
+              ))}
+            </ul>
+          )}
+
+          {item.badges && item.badges.length > 0 && (
+            <ul class="timeline-badges" role="list">
+              {item.badges.map((badge) => (
+                <li>
+                  <span class="tag">{badge}</span>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+      </li>
+    ))
+  }
+</ol>
+
+<style>
+  .timeline {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .timeline-item {
+    position: relative;
+    display: grid;
+    grid-template-columns: 32px minmax(0, 1fr);
+    gap: var(--space-4);
+    padding-bottom: var(--space-12);
+  }
+
+  .timeline-item:last-child {
+    padding-bottom: 0;
+  }
+
+  .timeline-marker {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+
+  .timeline-marker::after {
+    content: '';
+    position: absolute;
+    top: 12px;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    background-color: var(--color-border);
+  }
+
+  .timeline-item:last-child .timeline-marker::after {
+    display: none;
+  }
+
+  .timeline-dot {
+    width: 12px;
+    height: 12px;
+    margin-top: 6px;
+    border-radius: var(--radius-full);
+    background-color: var(--color-bg-elevated);
+    border: 3px solid var(--color-primary);
+    box-shadow: 0 0 0 3px var(--color-primary-soft);
+    z-index: var(--z-base);
+  }
+
+  .timeline-content {
+    min-width: 0;
+  }
+
+  .timeline-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: var(--space-2) var(--space-4);
+    margin-bottom: var(--space-3);
+  }
+
+  .timeline-heading {
+    min-width: 0;
+  }
+
+  .timeline-title {
+    font-size: var(--text-lg);
+    margin-bottom: var(--space-1);
+  }
+
+  .timeline-subtitle {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+    font-weight: var(--font-weight-medium);
+    margin: 0;
+  }
+
+  .timeline-location {
+    display: flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+    margin-bottom: var(--space-3);
+  }
+
+  .timeline-points {
+    margin: 0;
+    padding-left: 1.25rem;
+  }
+
+  .timeline-points li {
+    margin-block: var(--space-2);
+    font-size: var(--text-base);
+    color: var(--color-text);
+    line-height: var(--line-height-relaxed);
+  }
+
+  .timeline-points li::marker {
+    color: var(--color-primary);
+  }
+
+  .timeline-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    margin-top: var(--space-4);
+    margin-bottom: 0;
+    padding: 0;
+    list-style: none;
+  }
+</style>

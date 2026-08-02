@@ -1,0 +1,110 @@
+---
+import Tag from '@/components/ui/Tag.astro';
+import { formatDate, getReadingTime } from '@/utils/date';
+
+interface Props {
+  title: string;
+  description: string;
+  pubDate: Date;
+  updatedDate?: Date;
+  tags?: string[];
+  href: string;
+  body: string;
+  featured?: boolean;
+}
+
+const {
+  title,
+  description,
+  pubDate,
+  tags = [],
+  href,
+  body,
+  featured = false,
+} = Astro.props;
+---
+
+<article class={`post-card ${featured ? 'post-card-featured' : ''}`}>
+  <a class="post-card-link" href={href}>
+    <div class="post-card-body">
+      <div class="post-meta">
+        <time datetime={pubDate.toISOString()}>{formatDate(pubDate)}</time>
+        <span>{getReadingTime(body)}</span>
+      </div>
+      <h2 class="post-card-title">{title}</h2>
+      <p class="post-card-description">{description}</p>
+      {
+        tags.length > 0 && (
+          <div class="post-card-tags">
+            {tags.slice(0, 3).map((tag) => (
+              <Tag label={tag} />
+            ))}
+          </div>
+        )
+      }
+    </div>
+  </a>
+</article>
+
+<style>
+  .post-card {
+    background-color: var(--color-bg-elevated);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-sm);
+    transition:
+      box-shadow var(--transition-base),
+      border-color var(--transition-base),
+      transform var(--transition-base);
+    height: 100%;
+  }
+
+  .post-card:hover {
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-border-strong);
+    transform: translateY(-2px);
+  }
+
+  .post-card-link {
+    display: block;
+    height: 100%;
+    color: inherit;
+    padding: var(--space-6);
+  }
+
+  .post-card-link:hover {
+    color: inherit;
+  }
+
+  .post-card-body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+    height: 100%;
+  }
+
+  .post-card-title {
+    font-size: var(--text-lg);
+    letter-spacing: var(--letter-spacing-tight);
+    transition: color var(--transition-fast);
+  }
+
+  .post-card-link:hover .post-card-title {
+    color: var(--color-primary);
+  }
+
+  .post-card-description {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+    line-height: var(--line-height-relaxed);
+    margin: 0;
+  }
+
+  .post-card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    margin-top: auto;
+    padding-top: var(--space-2);
+  }
+</style>

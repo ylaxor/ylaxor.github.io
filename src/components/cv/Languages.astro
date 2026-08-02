@@ -1,0 +1,93 @@
+---
+import Section from '@/components/ui/Section.astro';
+import { cv } from '@/data/cv';
+---
+
+<Section id="languages" title="Languages">
+  <ul class="languages" role="list">
+    {
+      cv.languages.map((lang) => (
+        <li class="language">
+          <div class="language-head">
+            <span class="language-name">{lang.name}</span>
+            <span class="language-level">{lang.level}</span>
+          </div>
+          <div
+            class="language-bar"
+            role="progressbar"
+            aria-label={`${lang.name} proficiency`}
+            aria-valuenow={lang.proficiency}
+            aria-valuemin={0}
+            aria-valuemax={100}
+          >
+            <span
+              class="language-bar-fill"
+              style={`width: ${lang.proficiency}%`}
+            />
+          </div>
+        </li>
+      ))
+    }
+  </ul>
+</Section>
+
+<style>
+  .languages {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    max-width: var(--container-max-narrow);
+  }
+
+  @media (min-width: 640px) {
+    .languages {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .language {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3);
+  }
+
+  .language-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: var(--space-2);
+  }
+
+  .language-name {
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--text-base);
+  }
+
+  .language-level {
+    font-size: var(--text-sm);
+    color: var(--color-text-muted);
+  }
+
+  .language-bar {
+    height: 8px;
+    border-radius: var(--radius-full);
+    background-color: var(--color-bg-subtle);
+    border: 1px solid var(--color-border);
+    overflow: hidden;
+  }
+
+  .language-bar-fill {
+    display: block;
+    height: 100%;
+    border-radius: var(--radius-full);
+    background: linear-gradient(
+      90deg,
+      var(--color-primary),
+      var(--color-accent)
+    );
+    transition: width var(--transition-slow);
+  }
+</style>

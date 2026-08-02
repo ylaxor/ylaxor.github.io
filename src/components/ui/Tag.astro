@@ -1,0 +1,20 @@
+---
+interface Props {
+  label: string;
+  href?: string;
+  variant?: 'default' | 'primary';
+}
+
+const { label, href, variant = 'default' } = Astro.props;
+const classes = `tag ${variant === 'primary' ? 'tag-primary' : ''}`;
+---
+
+{
+  href ? (
+    <a class={classes} href={href}>
+      {label}
+    </a>
+  ) : (
+    <span class={classes}>{label}</span>
+  )
+}

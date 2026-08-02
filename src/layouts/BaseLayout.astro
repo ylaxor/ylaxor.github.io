@@ -1,0 +1,109 @@
+---
+import '@/styles/global.css';
+import { siteConfig, absoluteUrl, baseUrl } from '@/data/site';
+import Header from '@/components/layout/Header.astro';
+import Footer from '@/components/layout/Footer.astro';
+
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+  canonicalURL?: string;
+  type?: 'website' | 'article';
+  publishedTime?: string;
+  updatedTime?: string;
+  author?: string;
+  noindex?: boolean;
+}
+
+const {
+  title,
+  description = siteConfig.description,
+  image = siteConfig.ogImage,
+  canonicalURL,
+  type = 'website',
+  publishedTime,
+  updatedTime,
+  author = siteConfig.author,
+  noindex = false,
+} = Astro.props;
+
+const pageTitle = title
+  ? `${title} | ${siteConfig.shortTitle}`
+  : siteConfig.title;
+
+const pathname = Astro.url.pathname.startsWith(siteConfig.base)
+  ? Astro.url.pathname.slice(siteConfig.base.length)
+  : Astro.url.pathname;
+const canonical = canonicalURL ?? absoluteUrl(pathname);
+const ogImage = absoluteUrl(image.startsWith('/') ? image.slice(1) : image);
+---
+
+<!doctype html>
+<html lang={siteConfig.lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <meta name="author" content={author} />
+    <meta name="theme-color" content={siteConfig.themeColor} />
+
+    <link rel="canonical" href={canonical} />
+
+    <link rel="icon" type="image/svg+xml" href={baseUrl('/favicon.svg')} />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content={type} />
+    <meta property="og:site_name" content={siteConfig.title} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:locale" content={siteConfig.locale} />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+
+    {
+      type === 'article' && (
+        <>
+          <meta property="article:published_time" content={publishedTime} />
+          <meta property="article:modified_time" content={updatedTime} />
+          <meta property="article:author" content={author} />
+        </>
+      )
+    }
+
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
+
+    <link rel="sitemap" href={baseUrl('/sitemap-index.xml')} />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="RSS"
+      href={baseUrl('/rss.xml')}
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <Header />
+    <main id="main">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

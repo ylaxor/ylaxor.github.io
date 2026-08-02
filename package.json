@@ -1,0 +1,32 @@
+{
+  "name": "ali-ncibi-website",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Personal website and blog for Ali Ncibi - Data Engineer, Data Scientist & Computer Science Researcher",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "astro": "astro",
+    "lint": "prettier --check .",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^3.1.0",
+    "@astrojs/rss": "^4.0.0",
+    "@astrojs/sitemap": "^3.2.1",
+    "astro": "^4.16.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.10",
+    "prettier": "^3.9.6",
+    "prettier-plugin-astro": "^0.13.0",
+    "typescript": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=18.14.1"
+  },
+  "packageManager": "npm@10.0.0"
+}
