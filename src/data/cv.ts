@@ -43,7 +43,7 @@ export interface SkillCategory {
 }
 
 export const cv = {
-  name: 'Ali NCIBI',
+  name: 'Ali Ncibi',
   title: 'Data Engineer, Data Scientist & Computer Science Researcher',
   tagline:
     'Dedicated to building impactful AI solutions—from rigorous algorithmic benchmarking to deploying practical machine learning pipelines. As a versatile and lifelong learner, I genuinely enjoy discovering new tools and adapting to evolving technologies.',
